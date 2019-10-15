@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/javascript/clientConnection.js"></script>
+<script src="/javascript/client.js"></script>
+
+<div class="startup">
+	<div class="buttons">
+	<h1>Please select an option</h1>
+		<button class="btn" id="monkey" onClick="createRoom()">Create Room</button>
+		<button class="btn" id="alien" onClick="joinRoom()">Join Room</button>
+		<button class="btn" id="alien" onClick="startOfflineGame()">Start Offline Game</button>
+		<button class="btn" id="dinosaur" onClick="showRules()">Show Rules</button>
+	</div>
+</div>
+<div class="loader">
+	<h1>Waiting for other player to connect...</h1>
+</div>
+<div class="container">
+	<div class="buttons">
+	<h1>Please select an option</h1>
+		<button class="btn" id="monkey" onClick="handleButton(this.id)">Monkey</button>
+		<button class="btn" id="alien" onClick="handleButton(this.id)">Alien</button>
+		<button class="btn" id="dinosaur" onClick="handleButton(this.id)">Dinosaur</button>
+		<button class="btn" id="robot" onClick="handleButton(this.id)">Robot</button>
+		<button class="btn" id="dragon" onClick="handleButton(this.id)">Dragon</button>
+	</div>
+	
+
+	<div class="game-result" id="game-result">
+	
+		<div class="scores">
+			<div class="your-choice" id="your-score">
+		<p>Your score:<br/></p>
+		</div>
+		<div class="comp-choice" id="their-score">
+		<p>Their score:<br/></p>
+		
+		</div>
+	</div>
+		<div class="your-choice" id="your-choice">
+		<p>Your choice:<br/></p>
+		</div>
+		<div class="comp-choice" id="comp-choice">
+		<p>Their choice:<br/></p>
+		</div>
+		
+		<div class="overall-result" id="overall-result">
+		<p></p>
+		</div>
+	</div>
+</div>
+
+</html>
