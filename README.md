@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors
-Online custom Rock, Paper, Scissors style game using Javascript and Sockets.io
+Online custom Rock, Paper, Scissors style game using Node.js and Sockets.io
 
 ## Outcomes
 
